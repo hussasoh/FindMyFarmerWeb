@@ -2,18 +2,16 @@ import React from 'react'
 
 const Header = () => {
     return (
-            <div className="navbar h-fit bg-base-100 shadow-sm">
+            <header>
+             <div className="navbar h-fit bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <img className="w-30 rounded-full" src="/images/FindMyFarmerLogo.png" alt="logo" />
-                    <a className="text-2xl font-bold">
-                        <div>Find My Farmer</div>
-                    </a>
                 </div>
                 <nav className="navbar-center">
                     <ul className="menu menu-xl menu-horizontal rounded-box wd-56">
-                        <li><a>test</a></li>
-                        <li><a>test</a></li>
-                        <li><a>test</a></li>
+                        <li><a>Menu 1</a></li>
+                        <li><a>Menu 2</a></li>
+                        <li><a>Menu 3</a></li>
                     </ul>
                 </nav>
                 <div className="navbar-end">
@@ -40,6 +38,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            </header>
     )
 }
 export default Header

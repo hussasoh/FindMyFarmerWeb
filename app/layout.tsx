@@ -15,11 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cupcake">
-    <Header />
-      <body>
-        {children}
+
+      <body className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1"> {children} </main>
+        <Footer />
       </body>
-     <Footer />
     </html>
   );
 }
